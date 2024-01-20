@@ -12,6 +12,7 @@ import LandingPage from './component/LandingPage';
 function App() {
   return (
     <div className="App">
+      {/* <canvas></canvas> */}
     <LandingPage/>
     </div>
   );

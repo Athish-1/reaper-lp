@@ -2,6 +2,8 @@ import React from "react";
 import nameArrow from "../assets/nameArrow.svg";
 import reaper from "../assets/reaper.svg";
 import TextBehindReaper from "../assets/TextBehindReaper.svg";
+import TextBehindReaperAcccent from "../assets/backtextaccent.svg";
+
 import detailBlocks from "../assets/detail blocks.svg";
 import BWStripes from "../assets/blackwhitestripes.svg";
 import HomeIcon from "../assets/home.svg";
@@ -14,6 +16,8 @@ import  MyButton  from './LButton'
 // import expandedDetailers from '../assets/expandedDetailersAnimated.svg'
 import { motion } from "framer-motion";
 // import { WebView } from 'react-native-webview';
+
+
 
 function LandingPage(props) {
   return (
@@ -131,7 +135,7 @@ function LandingPage(props) {
               />
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ x:150, y: -100, opacity: 0, scale: 0.1, rotateZ: 120 }}
               animate={{ x:280, y: -260, opacity: 1, scale: 0.07, rotateZ: 40}}
               transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -155,7 +159,7 @@ function LandingPage(props) {
                 alt="fancy back text"
                 className="w-90 object-cover"
               />
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
               initial={{ y: 0, opacity: 0, scale: 1.5 }}
@@ -164,6 +168,19 @@ function LandingPage(props) {
             >
               <img
                 src={TextBehindReaper}
+                alt="fancy back text"
+                className="w-90 object-cover"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 0, opacity: 0, scale: 1.5 }}
+              animate={{ y: -40, opacity: 1, scale: 1.2 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="absolute"
+            >
+              <img
+                src={TextBehindReaperAcccent}
                 alt="fancy back text"
                 className="w-90 object-cover"
               />
