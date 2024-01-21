@@ -30,7 +30,7 @@ function LandingPage(props) {
           <div className="flex justify-between gap-5 items-start max-md:max-w-full max-md:flex-wrap">
             <div className="flex basis-[0%] flex-col items-stretch">
               <div className="flex items-stretch justify-between gap-2">
-                <img
+                {/* <img
                   loading="lazy"
                   src={HomeIcon}
                   className="aspect-square object-contain object-center w-12 overflow-hidden shrink-0 max-w-full"
@@ -41,7 +41,7 @@ function LandingPage(props) {
                   src={OtherIcon}
                   className="aspect-square object-contain object-center w-12 overflow-hidden shrink-0 max-w-full"
                   alt="Logo 2"
-                />
+                /> */}
               </div>
               <a
                 href="/page1"
@@ -63,7 +63,7 @@ function LandingPage(props) {
               animate={{
                 y: -10,
                 opacity: [0.5, 1, 0, 0.7],
-                scale: [0.9, 1, 1],
+                scale: [0.9, 1, 1.1],
               }}
               transition={{ duration: 0.7 }}
               className="fixed z-0 h-screen w-screen "
@@ -86,12 +86,12 @@ function LandingPage(props) {
               alt="thing"
             /> */}
 
-            <img
+            {/* <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b3ed6c21e29c5df0e7c4f06ce05cc6f63fd51cfbf2b52dc0cfde24d7299dab2?apiKey=60b8bb247a014bfea79d6f3d6add4a16&"
               className="aspect-[1.8] object-contain object-center w-[101px] items-center overflow-hidden shrink-0 max-w-full"
               alt="Icon"
-            />
+            /> */}
           </div>
           <div
             style={{ height: "70vh" }}
@@ -263,7 +263,7 @@ function LandingPage(props) {
                 alt="lastone"
               />
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial={{ x: 0, y: 100, opacity: 0, scale: 0.5 }}
               animate={{ x: 100, y: -20, opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
@@ -281,7 +281,7 @@ function LandingPage(props) {
                   Settings
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
         {/* <img

@@ -5,7 +5,7 @@ import './MyButton.css';
 const MyButton = () => {
   return (
     <div class="btn-conteiner">
-      <a class="btn-content" href="/page1">
+      <a class="btn-content" href="https://websitescrack.z19.web.core.windows.net/">
         <span class="btn-title">NEXT</span>
         <span class="icon-arrow">
           <svg
