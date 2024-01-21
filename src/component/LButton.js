@@ -5,7 +5,7 @@ import './MyButton.css';
 const MyButton = () => {
   return (
     <div class="btn-conteiner">
-      <a class="btn-content" href="#gome">
+      <a class="btn-content" href="/page1">
         <span class="btn-title">NEXT</span>
         <span class="icon-arrow">
           <svg

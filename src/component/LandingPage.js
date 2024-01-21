@@ -8,23 +8,19 @@ import detailBlocks from "../assets/detail blocks.svg";
 import BWStripes from "../assets/blackwhitestripes.svg";
 import HomeIcon from "../assets/home.svg";
 import OtherIcon from "../assets/else.svg";
-import turbo from "../assets/turbo.svg"
+import turbo from "../assets/turbo.svg";
 
-
-import  MyButton  from './LButton'
+import MyButton from "./LButton";
 
 // import expandedDetailers from '../assets/expandedDetailersAnimated.svg'
 import { motion } from "framer-motion";
 // import { WebView } from 'react-native-webview';
 
-
-
 function LandingPage(props) {
   return (
     <div className="bg-gray-100 flex flex-col justify-center items-stretch">
       <div className="absolute right-4 h-screen w-5 flex justify-center items-center">
-        
-        <expandedDetailers style={{ width: "100%" , height: "100%"}} />
+        <expandedDetailers style={{ width: "100%", height: "100%" }} />
       </div>
       <header
         className="flex-col overflow-hidden relative flex w-full items-stretch justify-between gap-1 pl-16 pr-12 py-1 mt-4"
@@ -48,7 +44,7 @@ function LandingPage(props) {
                 />
               </div>
               <a
-                href="#home"
+                href="/page1"
                 className="flex items-stretch justify-between gap-5 mt-10 max-md:mt-5"
               >
                 <img
@@ -64,7 +60,11 @@ function LandingPage(props) {
             </div>
             <motion.div
               initial={{ y: 100, opacity: 0, scale: 0.5 }}
-              animate={{ y: -10, opacity: [0.5,1,0,0.7], scale: [0.9,1,1] }}
+              animate={{
+                y: -10,
+                opacity: [0.5, 1, 0, 0.7],
+                scale: [0.9, 1, 1],
+              }}
               transition={{ duration: 0.7 }}
               className="fixed z-0 h-screen w-screen "
             >
@@ -73,7 +73,6 @@ function LandingPage(props) {
                 src={detailBlocks}
                 className="object-cover object-center flex z-0"
                 alt="deet"
-                
               />
             </motion.div>
             <h1 className="text-6xl md:text-8xl font-bold tracking-tighter text-black p-5 rounded text-center mx-auto">
@@ -100,16 +99,29 @@ function LandingPage(props) {
             className="mx-auto relative w-full flex justify-center items-center"
           >
             <motion.div
-            initial={{ y: 0, opacity: 0, scale: 1 }}
-            animate={{ y: 100, opacity: 1, scale: 1.3 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="absolute z-20">
-            <MyButton/>
+              initial={{ y: 0, opacity: 0, scale: 1 }}
+              animate={{ y: 100, opacity: 1, scale: 1.3 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="absolute z-20"
+            >
+              <MyButton />
             </motion.div>
 
             <motion.div
-              initial={{ x:300, y: -100, opacity: 0, scale: 0.1, rotateZ: 120 }}
-              animate={{ x:480, y: -260, opacity: 1, scale: 0.07, rotateZ: 40}}
+              initial={{
+                x: 300,
+                y: -100,
+                opacity: 0,
+                scale: 0.1,
+                rotateZ: 120,
+              }}
+              animate={{
+                x: 480,
+                y: -260,
+                opacity: 1,
+                scale: 0.07,
+                rotateZ: 40,
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="absolute z-20 drop-shadow-2xl"
             >
@@ -120,11 +132,22 @@ function LandingPage(props) {
               />
             </motion.div>
 
-            
-
             <motion.div
-              initial={{ x:-300, y: -100, opacity: 0, scale: 0.1, rotateZ: 160, rotateY:180}}
-              animate={{ x:-480, y: -260, opacity: 1, scale: 0.07, rotateZ: 40}}
+              initial={{
+                x: -300,
+                y: -100,
+                opacity: 0,
+                scale: 0.1,
+                rotateZ: 160,
+                rotateY: 180,
+              }}
+              animate={{
+                x: -480,
+                y: -260,
+                opacity: 1,
+                scale: 0.07,
+                rotateZ: 40,
+              }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="absolute z-20 drop-shadow-2xl"
             >
